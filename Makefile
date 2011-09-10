@@ -1,6 +1,6 @@
 all: pdf
 
-TEXFILE=virtutrace-iaria
+TEXFILE=virtutrace-achi
 
 pdf: ${TEXFILE}.pdf
 

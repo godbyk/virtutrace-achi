@@ -8,11 +8,20 @@
 \maketitle
 
 %background and intended domain
+
+Immersive virtual reality (VR) can offer an ideal solution for many experimenters wishing to study real-world phenomena but with greater control over experiment conditions and with potentially reduced cost as compared to studying human actions in real-world settings. For example, to study firefighter decision making under stress, it is very costly and dangerous to place participants in an actual burning house. Additionally, controlling independent variables and monitoring dependent variables would be difficult. For VR to be useful for this type of study, what is therefore needed is the ability to easily create scripted scenarios and adjust experimental variables. Such a system must also be able to log all relevant output, such as participant movement data.
+
+We present VirtuTrace, an extendable, multi-purpose experiment engine that has been designed for use in diverse experimental contexts. A major design consideration was the ability to quickly and easily create a basic scene, choose a navigation interface, and go. On the other hand, if an experiment calls for more custom capabilities, the system should be able to be extended within reason to accommodate.
+
 %
 %architecture
 %-scenemanager (allows for quickly trying different combos)
 %-physics
 %---easy to add non-real-world physics
+
+VirtuTrace makes use of Bullet Physics coupled with OSGBullet to provide real-world physics functionality.
+
+
 %-navigation
 %---gamepad
 %---body-based
@@ -22,6 +31,7 @@
 %case studies
 %-EM study 1
 %-EM study 2
+%-EM addition of fuzzy logic for BodyNav
 %-Kofi study
 %
 %future planned improvements
